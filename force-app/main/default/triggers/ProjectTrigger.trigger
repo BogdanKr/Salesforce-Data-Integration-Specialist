@@ -11,7 +11,8 @@ trigger ProjectTrigger on Project__c (after update) {
     }
     if (Trigger.isAfter) {
         if (Trigger.isUpdate) {
-            ProjectTriggerHandler.onAfterUpdate(Trigger.new, Trigger.oldMap);
+//            ProjectTriggerHandler.onAfterUpdate(Trigger.new, Trigger.oldMap);
+            BillingCalloutService.callBillingService(Trigger.new, Trigger.oldMap);
         }
     }
 }

@@ -13,6 +13,8 @@
         <members>ProjectRESTService</members>
         <members>ProjectRESTServiceTest</members>
         <members>ProjectTriggerHandler</members>
+        <members>AsyncBillingServiceProxy</members>
+        <members>BillingServiceProxy</members>
         <name>ApexClass</name>
     </types>
     <types>

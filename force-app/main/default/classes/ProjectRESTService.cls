@@ -11,7 +11,7 @@ global class ProjectRESTService {
             upsert project ProjectRef__c;
             update new Opportunity(Id = opportunityId, DeliveryInstallationStatus__c = 'In progress');
             return 'OK';
-        } catch (Exception ex){
+        } catch (Exception ex) {
             Database.rollback(sp);
             return ex.getMessage();
         }
