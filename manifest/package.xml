@@ -12,6 +12,7 @@
         <members>ProjectCalloutServiceTest</members>
         <members>ProjectRESTService</members>
         <members>ProjectRESTServiceTest</members>
+        <members>ProjectTriggerHandler</members>
         <name>ApexClass</name>
     </types>
     <types>
